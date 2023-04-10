@@ -1,6 +1,6 @@
 package campeonatoDeFutebol;
 
-public class clube {
+public class Clube {
 
 	        //iniciando os atributos
 			private String nome;
@@ -9,16 +9,16 @@ public class clube {
 			
 			
 			//Criando um construtor para iniciar os atributos
-			public void Clube(String nome) {
+			public Clube(String nome) {
 				this.nome=nome;
 				this.pontos=0;
 				this.saldoGols=0;
 			}
 			
 			//Criando os getters para poder acessar os atriobutos que são privados
+			
 			public String getNome() {
-				return nome;
-				
+			    return nome;
 			}
 			public int getPontos() {
 				return pontos;
@@ -33,7 +33,7 @@ public class clube {
 				pontos += 3;
 				saldoGols += golsMarcados - golsSofridos;
 			}
-			public void empatar(int golsMarcados, int golsSofridos) {
+			public void empatar() {
 				pontos += 1;
 			}
 			public void perder(int golsMarcados, int golsSofridos) {
